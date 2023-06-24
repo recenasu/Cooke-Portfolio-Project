@@ -1,47 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 
+    <!-- website metadata -->
     <head>
           <title>Rick Cooke's Portfolio</title>
           <meta charset="UTF-8"/>
           <meta name="viewport" content="width=device-width, initial-scale=1"/>
           <link name="stylesheet" type="text/css" href="./assets/css/styles.css"/>   
     </head>
+    <!-- main body -->
     <body>
-        <section class="nav_bar">
-            <h1>Rick Cooke's Portfolio</h1>
-            <nav>About Me</nav>
-            <nav>Work</nav>
-            <nav>Contact Me</nav>
-            <nav>Resume</nav> 
-        </section>
+        <!-- Header containing name and nav links -->
+        <header>
+            <h1>Rick <span class="Cooke">Cooke's</span> Portfolio</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#About_Me">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#Work">Work</a>
+                    </li>
+                    <li>
+                        <a href="#Contact_Me">Contact Me</a>
+                    </li>
+                    <li>
+                        <a href="./assets/html/resume.html">Resume</a>
+                    </li>
+                </ul> 
+            </nav>
+        </header>
+        <!-- Second strip containing photo and subtitle -->
         <section class="subtitle">
             <img src="./assets/imgs/Image-lowres.jpg"/>
             <h3>Web Developer and Bestselling Author</h3>  
         </section>
+        <!-- main content area -->
         <main>
-            <section class="About_Me">
+            <!-- About Me section -->
+            <section id="About_Me">
                 <h2>About Me</h2>
                 <p>A description of me</p>
             </section>
-
-            <section class="Work">
+            <!-- Work section -->
+            <section id="Work">
                 <h2>Work</h2>
-                <card class="Best_Project">My best project</card>
-                <card class="Project">Project W</card>
-                <card class="Project">Project X</card>
-                <card class="Project">Project Y</card>
-                <card class="Project">Project Z</card>
+                <card class="Best_Project">Airport Joe</card>
+                <card class="Project">RPG - Random Pirate Generator</card>
+                <card class="Project">Project Venus</card>
+                <card class="Project">Pong Remastered</card>
+                <card class="Project">Salad Bar Tycoon</card>
             </section>
-                         
-            </section>
-            <footer>
+            <!-- Contact Me section / footer -->                         
+            <footer id="Contact_Me">
                <h2>Contact Me</h2> 
-               <card>123.456.7880</card>
-               <card>mywebsite@website.com</card>
-               <card>GitHub</card>
-               <card>twitter</card>
-               <card>spotify</card>
+               <ul>
+                    <li>
+                        <p>123.456.7880</p>
+                    </li>
+                    <li>
+                        <a href="./assets/html/rickwebsite.html">Rick's Website</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/recenasu">GitHub</a>
+                    </li>
+                    <li>
+                        <p>rick@email.com</p>
+                    </li>
+               </ul>
             </footer>
         </main>
     </body>
