@@ -62,11 +62,95 @@ span {
     
  }
 
+ /* The styling for the portrait photo */
  img {
     width: 10%;
  }
 
+ /* The styling for the sub title */
  h3 {
     font-size: 2rem;
  }
 
+ #about_me {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: var(--colorFour);    
+ }
+
+ #work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: var(--colorFour);  
+ }
+
+ #cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: var(--colorFour);
+    width:80%;        
+ }
+
+ #best_project {
+    width: 90%;
+    height:500px;
+    background-image: url(../imgs/airportjoe.png);
+ }
+
+ #rpg {
+    width: 40%;
+    height:250px;
+    background-image: url(../imgs/rpg-250pxh.png);
+ }
+
+ #projvenus {
+    width: 40%;
+    height:250px;
+    background-image: url(../imgs/projvenus.png);
+ }
+
+ #pongrem {
+    width: 40%;
+    height:250px;
+    background-image: url(../imgs/pongrem.png);
+ }
+ 
+ #saladbt {
+    width: 40%;
+    height:250px;
+    background-image: url(../imgs/saladbt.png);
+ }
+ 
+
+ #contact_me {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: var(--colorTwo);
+ }
+
+#contact_me nav {
+    display: flex;
+    flex-direction: row;
+    justify-items:center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0%;
+    width:80%;
+ }
+
+ #contact_me p {
+    display:inline-block;
+    margin:0%;
+ }

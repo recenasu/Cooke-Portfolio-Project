@@ -37,23 +37,28 @@
         <!-- main content area -->
         <main>
             <!-- About Me section -->
-            <section id="About_Me">
+            <section id="about_me">
                 <h2>About Me</h2>
                 <p>A description of me</p>
             </section>
             <!-- Work section -->
-            <section id="Work">
+            <section id="work">
                 <h2>Work</h2>
-                <card class="Best_Project">Airport Joe</card>
-                <card class="Project">RPG - Random Pirate Generator</card>
-                <card class="Project">Project Venus</card>
-                <card class="Project">Pong Remastered</card>
-                <card class="Project">Salad Bar Tycoon</card>
+                <!-- section containing the project cards -->
+                <section id="cards">
+                    <!-- Larger card -->
+                    <card id="best_project">Airport Joe</card>
+                    <!-- Normal size cards -->
+                    <card id="rpg">RPG - Random Pirate Generator</card>
+                    <card id="projvenus">Project Venus</card>
+                    <card id="pongrem">Pong Remastered</card>
+                    <card id="saladbt">Salad Bar Tycoon</card>
+                </section>
             </section>
             <!-- Contact Me section / footer -->                         
-            <footer id="Contact_Me">
+            <footer id="contact_me">
                <h2>Contact Me</h2> 
-               <ul>
+               <nav>
                     <li>
                         <p>123.456.7880</p>
                     </li>
@@ -66,7 +71,7 @@
                     <li>
                         <p>rick@email.com</p>
                     </li>
-               </ul>
+                </nav>
             </footer>
         </main>
     </body>
