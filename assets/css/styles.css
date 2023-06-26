@@ -36,13 +36,13 @@ h1 {
     width: 45%;
     font-size: 2.5rem;
 }
-/* The container for the navigation links at the top and bottom of the page */
- 
- 
+
+/* The change in color to the "Portfolio" text in the page header */
 span {
     font-size: 2.5rem;
     color: var(--colorFive);
 }
+
 /* The container for the navigation links at the top and bottom of the page */
  nav {
     padding-top: 15px;
@@ -69,20 +69,26 @@ span {
     align-items: center;
     /* background-color: var(--colorFour); */
     background-image: url(../imgs/backgrd.png);
-    padding: 0px 40px 0px 40px;
-
-    
+    padding: 0px 40px 0px 40px;    
  }
 
  /* The styling for the portrait photo */
  img {
     width: 10%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: var(--colorTwo);
+    padding: 5px;
+    margin: 5px;
+
  }
 
+ /*Remove padding for the main content area*/
 main {
     padding: 0%;
 }
 
+/* The styling for the left sidebar content titles */
 h2 {
     /* width: 20%; */
     font-size: 1.6rem;
@@ -90,14 +96,15 @@ h2 {
     background-color: var(--colorTwo);
 }
 
- /* The styling for the sub title */
+ /* The styling for the sub title opposite the portrait photo*/
  h3 {
     font-size: 2rem;
     background-color: var(--colorTwo);
     background-blend-mode: color-burn;
  }
 
- #about_me {
+ /* Styling for the About Me container. This contains a sidebar and a paragraph. */
+#about_me {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -107,63 +114,108 @@ h2 {
     
  }
 
+ /* Styling for all the sidebars */
 .sidebar {
     padding: 0px;
     width: 20%;
     height: 100%;
-    
-
 }
 
- #work {
+/* Styling for the Work container. This contains a sidebar and the cards container. */
+#work {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-start;
     background-color: var(--colorFour);  
  }
 
- #cards {
+ .card_area {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: baseline;
     background-color: var(--colorFour);
-    width:80%;        
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-left-color: var(--colorFive);
+    width:80%;     
+    padding: 10px 40px;
+    
  }
 
+card {
+   width: 30%;
+   height:250px;
+   font-size: 1.4rem;
+   font-weight: bold;
+   padding: 10px 40px;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100%;
+   text-align: left;
+   border-radius: 10px;
+}
+
  #best_project {
-    width: 90%;
+    width: 80%;
     height:500px;
-    background-image: url(../imgs/airportjoe.png);
+    background-image: url(../imgs/airportjoe.png);     
+ }
+
+ #best_project p {
+   border: none;
+   margin-top:40%;
+   margin-left:20%;
+   padding: 0%;
+   border: 0%;    
  }
 
  #rpg {
-    width: 40%;
-    height:250px;
-    background-image: url(../imgs/rpg-250pxh.png);
+   background-image: url(../imgs/rpg-250pxh.png);
+ }     
+   
+#rpg p {
+   border: none;
+   margin:10%;
+   padding: 0%;
+   border: 0%;    
  }
 
  #projvenus {
-    width: 40%;
-    height:250px;
-    background-image: url(../imgs/projvenus.png);
+   background-image: url(../imgs/projvenus.png);    
+ }
+
+ #projvenus p {
+   border: none;
+   margin:10%;
+   padding: 0%;
+   border: 0%;    
  }
 
  #pongrem {
-    width: 40%;
-    height:250px;
-    background-image: url(../imgs/pongrem.png);
+   background-image: url(../imgs/pongrem.png);
+ }
+
+ #pongrem p {
+   border: none;
+   margin:10%;
+   padding: 0%;
+   border: 0%;    
  }
  
  #saladbt {
-    width: 40%;
-    height:250px;
-    background-image: url(../imgs/saladbt.png);
+   background-image: url(../imgs/saladbt.png);   
  }
  
+ #saladbt p {
+   border: none;
+   margin:10%;
+   padding: 0%;
+   border: 0%;    
+ }
 
  #contact_me {
     display: flex;
@@ -197,3 +249,5 @@ h2 {
     border-left-width: 5px;
     border-left-color: var(--colorFive);
  }
+
+ 
