@@ -90,10 +90,9 @@ main {
 
 /* The styling for the left sidebar content titles */
 h2 {
-    /* width: 20%; */
     font-size: 1.6rem;
-    justify-content: right;
     background-color: var(--colorTwo);
+    padding-right: 20px;
 }
 
  /* The styling for the sub title opposite the portrait photo*/
@@ -119,6 +118,7 @@ h2 {
     padding: 0px;
     width: 20%;
     height: 100%;
+    text-align: right;
 }
 
 /* Styling for the Work container. This contains a sidebar and the cards container. */
@@ -136,7 +136,7 @@ h2 {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: baseline;
+    align-items: center;
     background-color: var(--colorFour);
     border-left-style: solid;
     border-left-width: 5px;
@@ -166,11 +166,16 @@ card {
  }
 
  #best_project p {
+   height:20px;
+   width:150px;
+   position:relative;
+   top: 260px;
+   left: 1%;
+   text-align: center;
    border: none;
-   margin-top:40%;
-   margin-left:20%;
-   padding: 0%;
-   border: 0%;    
+   padding: 15px;
+   background-color: var(--colorFour);
+   border-radius: 5px;   
  }
 
  #rpg {
@@ -178,10 +183,16 @@ card {
  }     
    
 #rpg p {
+   height:40px;
+   width:160px;
+   position:relative;
+   top: 10px;
+   left: 32%;
+   text-align: center;
    border: none;
-   margin:10%;
-   padding: 0%;
-   border: 0%;    
+   padding: 15px;
+   background-color: var(--colorFour);
+   border-radius: 5px;    
  }
 
  #projvenus {
@@ -189,10 +200,17 @@ card {
  }
 
  #projvenus p {
+   height:15px;
+   width:150px;
+   position:relative;
+   top: 80px;
+   left: -10%;
+   text-align: center;
    border: none;
-   margin:10%;
-   padding: 0%;
-   border: 0%;    
+   padding: 15px;
+   background-color: var(--colorFour);
+   border-radius: 5px;
+    
  }
 
  #pongrem {
@@ -200,10 +218,16 @@ card {
  }
 
  #pongrem p {
+   height:15px;
+   width:200px;
+   position:relative;
+   top: 170px;
+   left: 14%;
+   text-align: center;
    border: none;
-   margin:10%;
-   padding: 0%;
-   border: 0%;    
+   padding: 15px;
+   background-color: var(--colorFour);
+   border-radius: 5px; 
  }
  
  #saladbt {
@@ -211,10 +235,16 @@ card {
  }
  
  #saladbt p {
+   height:15px;
+   width:200px;
+   position:relative;
+   top: 170px;
+   left: 14%;
+   text-align: center;
    border: none;
-   margin:10%;
-   padding: 0%;
-   border: 0%;    
+   padding: 15px;
+   background-color: var(--colorFour);
+   border-radius: 5px; 
  }
 
  #contact_me {
@@ -248,6 +278,14 @@ card {
     border-left-style: solid;
     border-left-width: 5px;
     border-left-color: var(--colorFive);
+    
  }
 
- 
+ footer a {
+   font-size: 1.5rem;
+ }
+
+ footer h2 {
+   text-align: center;
+   padding: 0px;
+ }
