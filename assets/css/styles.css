@@ -58,7 +58,9 @@ span {
  a {
     display: inline-block;
     font-size: 1.25rem;
+    vertical-align: middle;
  }
+
 
 /* The subtitle class containing the portrait image and the subtitle text items */
 .subtitle {
@@ -162,7 +164,14 @@ card {
  #best_project {
     width: 80%;
     height:500px;
-    background-image: url(../imgs/airportjoe.png);     
+    background-image: url(../imgs/airportjoe.png);
+    filter:grayscale(90%); 
+    transition-property: filter;
+   transition-duration: 1.0s;     
+ }
+
+ #best_project:hover {
+   filter:grayscale(0%);
  }
 
  #best_project p {
@@ -180,7 +189,14 @@ card {
 
  #rpg {
    background-image: url(../imgs/rpg-250pxh.png);
+   filter:grayscale(90%); 
+   transition-property: filter;
+   transition-duration: 1.0s; 
  }     
+
+ #rpg:hover {
+   filter:grayscale(0%);
+ }
    
 #rpg p {
    height:40px;
@@ -196,7 +212,14 @@ card {
  }
 
  #projvenus {
-   background-image: url(../imgs/projvenus.png);    
+   background-image: url(../imgs/projvenus.png);
+   filter:grayscale(90%);
+   transition-property: filter;
+   transition-duration: 1.0s;      
+ }
+
+ #projvenus:hover {
+   filter:grayscale(0%);
  }
 
  #projvenus p {
@@ -215,6 +238,13 @@ card {
 
  #pongrem {
    background-image: url(../imgs/pongrem.png);
+   filter:grayscale(90%);
+   transition-property: filter;
+   transition-duration: 1.0s;  
+ }
+
+ #pongrem:hover {
+   filter:grayscale(0%);
  }
 
  #pongrem p {
@@ -231,7 +261,15 @@ card {
  }
  
  #saladbt {
-   background-image: url(../imgs/saladbt.png);   
+   background-image: url(../imgs/saladbt.png);
+   filter:grayscale(90%);
+   transition-property: filter;
+   transition-duration: 1.0s;
+   user-select: ;    
+ }
+
+ #saladbt:hover {
+   filter:grayscale(0%);
  }
  
  #saladbt p {
@@ -244,7 +282,8 @@ card {
    border: none;
    padding: 15px;
    background-color: var(--colorFour);
-   border-radius: 5px; 
+   border-radius: 5px;
+   transition-property: font-size;
  }
 
  #contact_me {
