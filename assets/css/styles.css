@@ -60,8 +60,15 @@ span {
     display: inline-block;
     font-size: 1.25rem;
     vertical-align: middle;
+    transition-property: background-color color;
+    transition-duration: .7s;
+    padding: 5px;
  }
 
+ a:hover {
+  background-color: var(--colorFive);
+  color: var(--colorOne);
+ }
 
 /* The subtitle class containing the portrait image and the subtitle text items */
 .subtitle {
