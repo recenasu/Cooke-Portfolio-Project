@@ -20,14 +20,13 @@
 /* The header containing the h1 and nav elements as flex items */
 header {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-items: baseline;
     justify-content: space-around;
     align-items: center;
-    /* background-color: var(--colorTwo); */
     background-image:linear-gradient(var(--colorTwo), var(--colorFour));
-    padding: 5px;
+    padding: 3px;
     
 }
 
@@ -50,6 +49,8 @@ span {
     float: right;
  }
  
+/* The nav  */
+
  /* The individual navigation links */
  li {
     display: inline-block;
@@ -177,9 +178,9 @@ card {
  #best_project p {
    height:20px;
    width:150px;
-   position:relative;
-   top: 260px;
-   left: 1%;
+   position:fixed;
+   top: 160px;
+   left: 5%;
    text-align: center;
    border: none;
    padding: 15px;
@@ -199,11 +200,11 @@ card {
  }
    
 #rpg p {
-   height:40px;
-   width:160px;
-   position:relative;
-   top: 10px;
-   left: 32%;
+   height:20px;
+   width:280px;
+   position:fixed;
+   top: 44px;
+   left: 3%;
    text-align: center;
    border: none;
    padding: 15px;
@@ -223,11 +224,11 @@ card {
  }
 
  #projvenus p {
-   height:15px;
+   height:20px;
    width:150px;
-   position:relative;
+   position:fixed;
    top: 80px;
-   left: -10%;
+   left: 5%;
    text-align: center;
    border: none;
    padding: 15px;
@@ -248,11 +249,11 @@ card {
  }
 
  #pongrem p {
-   height:15px;
+   height:20px;
    width:200px;
-   position:relative;
-   top: 170px;
-   left: 14%;
+   position:fixed;
+   top: 175px;
+   left: 19%;
    text-align: center;
    border: none;
    padding: 15px;
@@ -273,9 +274,9 @@ card {
  }
  
  #saladbt p {
-   height:15px;
+   height:20px;
    width:200px;
-   position:relative;
+   position:fixed;
    top: 170px;
    left: 14%;
    text-align: center;
@@ -328,3 +329,56 @@ card {
    text-align: center;
    padding: 0px;
  }
+
+ @media screen and (max-width:992px) {
+  header {
+    flex-direction: column;
+  }
+
+  h1 {
+    width: 75%;
+    text-align: center;
+}
+
+
+  .card_area {
+    flex-direction:column;
+    align-items:center;
+    justify-content: space-between;
+    gap: 10px;
+    
+  }
+
+  card {
+    width: 80%;
+    height:250px;
+    /* font-size: 1.4rem;
+    font-weight: bold; */
+    padding: 0px 40px;
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    text-align: left;
+    border-radius: 10px; */
+ }
+
+ #best_project {
+  width: 95%;
+  height:400px;
+  padding: 0px 0px; 
+}
+
+#contact_me  {
+  flex-direction:column;
+  align-items: center;
+}
+
+#contact_me nav {
+  width:90%;
+}
+
+}
+
+@media screen and (max-width:768px) {
+  
+}
