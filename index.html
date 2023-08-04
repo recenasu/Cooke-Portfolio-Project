@@ -1,106 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <!-- website metadata -->
-    <head>
-          <title>Rick Cooke's Portfolio</title>
-          <meta charset="UTF-8"/>
-          <meta name="viewport" content="width=device-width, initial-scale=1"/>
-          <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />   
-    </head>
-    <!-- main body -->
-    <body>
-        <!-- Header containing name and nav links -->
-        <header>
-            <h1>Rick Cooke's<span class="portfolio">Portfolio</span> </h1>
-            <!-- <ul> -->
+<!-- website metadata -->
+
+<head>
+    <title>Rick Cooke's Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />  -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles2.css" />
+</head>
+<!-- main body -->
+
+<body>
+    <!-- Header containing name and nav links -->
+    <header>
+        <h1>Rick Cooke's<span class="portfolio">Portfolio</span> </h1>
+        <!-- <ul> -->
+        <nav>
+            <li>
+                <a href="#about_me">About Me</a>
+            </li>
+            <li>
+                <a href="#work">Work</a>
+            </li>
+            <li>
+                <a href="#contact_me">Contact Me</a>
+            </li>
+            <li>
+                <a href="./assets/html/resume.html">Resume</a>
+            </li>
+        </nav>
+    </header>
+    <!-- Second strip containing photo and subtitle -->
+    <section class="subtitle">
+        <img src="./assets/imgs/Image-lowres.jpg" />
+        <h3>Web Developer and Author</h3>
+    </section>
+    <!-- main content area -->
+    <main>
+        <!-- About Me section -->
+        <section id="about_me">
+            <section class="sidebar">
+                <h2>About Me</h2>
+            </section>
+            <p>Technical communicator accustomed to high tempo, compressed schedule project environments requiring quick
+                turn-around on customer deliverables. On-time and within-budget delivery of stream-lined, user-friendly,
+                highly interactive webpages. HTML, CSS, and JavaScript coding specialist committed to achieving customer
+                goals by employing thorough research and designing specialized web applications. <br></br> Veteran, US
+                Navy Submarine Officer. Author of 13 novels.</p>
+        </section>
+        <!-- Work section -->
+        <section id="work">
+            <section class="sidebar">
+                <h2>Work</h2>
+            </section>
+            <!-- section containing the project cards -->
+            <section class="card_area">
+                <!-- Larger card -->
+                <a href="https://ameridacas.github.io/CamelCase_Lab_Rats-/">
+                    <div id="best_project">
+                        <p>Film Discovery</p>
+                    </div>
+                </a>
+                <!-- Normal size cards -->
+                <div class="normal_card">
+                    <a href="./assets/html/rpg.html">
+                        <div id="rpg">
+                            <p>Random Pirate Generator</p>
+                        </div>
+                    </a>
+                    <a href="./assets/html/projectVenus.html">
+                        <div id="projvenus">
+                            <p>Project Venus</p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="./assets/html/pongRemaster.html">
+                        <div id="pongrem">
+                            <p>Pong Remastered</p>
+                        </div>
+                    </a>
+                    <a href="./assets/html/saladBarTycoon.html">
+                        <div id="saladbt">
+                            <p>Salad Bar Tycoon</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </section>
+        <!-- Contact Me section / footer -->
+        <footer id="contact_me">
+            <section class="sidebar">
+                <h2>Contact Me</h2>
+            </section>
             <nav>
                 <li>
-                    <a href="#about_me">About Me</a>
+                    <p>123.456.7880</p>
                 </li>
                 <li>
-                    <a href="#work">Work</a>
+                    <a href="./assets/html/rickwebsite.html">Rick's Website</a>
                 </li>
                 <li>
-                    <a href="#contact_me">Contact Me</a>
+                    <a href="https://github.com/recenasu">GitHub</a>
                 </li>
                 <li>
-                    <a href="./assets/html/resume.html">Resume</a>
+                    <p>rick@email.com</p>
                 </li>
             </nav>
-        </header>
-        <!-- Second strip containing photo and subtitle -->
-        <section class="subtitle">
-            <img src="./assets/imgs/Image-lowres.jpg"/>
-            <h3>Web Developer and Author</h3>  
-        </section>
-        <!-- main content area -->
-        <main>
-            <!-- About Me section -->
-            <section id="about_me">
-                <section class="sidebar">
-                    <h2>About Me</h2>
-                </section>
-                <p>Technical communicator accustomed to high tempo, compressed schedule project environments requiring quick turn-around on customer deliverables. On-time and within-budget delivery of stream-lined, user-friendly, highly interactive webpages.	HTML, CSS, and JavaScript coding specialist committed to achieving customer goals by employing thorough research and designing specialized web applications. <br></br> Veteran, US Navy Submarine Officer. Author of 13 novels.</p>
-            </section>
-            <!-- Work section -->
-            <section id="work">
-                <section class="sidebar">
-                    <h2>Work</h2>
-                </section>
-                <!-- section containing the project cards -->
-                <section class="card_area">
-                    <!-- Larger card -->
-                    <card id="best_project">
-                        <a href="./assets/html/airportJoe.html">
-                            <p>Airport Joe</p>
-                        </a>
-                    </card>
-                    <!-- Normal size cards -->
-                    <card id="rpg">
-                        <a href="./assets/html/rpg.html">
-                            <p>Random Pirate Generator</p>
-                        </a>
-                    </card>                   
-                    <card id="projvenus">
-                        <a href="./assets/html/projectVenus.html">
-                            <p>Project Venus</p>
-                        </a>
-                    </card>
-                    <card id="pongrem">
-                        <a href="./assets/html/pongRemaster.html">
-                            <p>Pong Remastered</p>
-                        </a>
-                    </card>
-                    <card id="saladbt">
-                        <a href="./assets/html/saladBarTycoon.html">
-                            <p>Salad Bar Tycoon</p>
-                        </a>
-                    </card>
-                </section>
-            </section>
-            <!-- Contact Me section / footer -->                         
-            <footer id="contact_me">
-                <section class="sidebar">
-                    <h2>Contact Me</h2>
-                </section> 
-                <nav>
-                    <li>
-                        <p>123.456.7880</p>
-                    </li>
-                    <li>
-                        <a href="./assets/html/rickwebsite.html">Rick's Website</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/recenasu">GitHub</a>
-                    </li>
-                    <li>
-                        <p>rick@email.com</p>
-                    </li>
-                </nav>
-            </footer>
-        </main>
-    </body>
+        </footer>
+    </main>
+</body>
 
 
 </html>
